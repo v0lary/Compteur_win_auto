@@ -1,0 +1,95 @@
+<style>
+        /* CSS (Style) */
+        body { 
+            font-family: 'Luckiest Guy', cursive; /* Utilisation de la nouvelle police */
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            /* On retire le padding du body pour que la page soit très compacte */
+            padding: 0; 
+            background-color: transparent !important; /* FOND TRANSPARENT */
+            color: white; 
+            user-select: none;
+        }
+        
+        .container {
+            background-color: transparent;
+            /* Le padding horizontal (0 10px) est enlevé ou réduit */
+            padding: 10px 5px; 
+            text-align: center;
+            /* La largeur maximale du conteneur est réduite pour centrer les boutons */
+            max-width: 350px; 
+        }
+
+        h2 { 
+            font-family: 'Luckiest Guy', cursive;
+            color: #f1c40f; 
+            margin-top: 30px; 
+            margin-bottom: 10px; /* Réduit l'espace après le titre */
+            font-size: 1.5em; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+            white-space: nowrap; /* Empêche les titres de se casser sur plusieurs lignes */
+        }
+        
+        #win-display { 
+            font-size: 80px; 
+            font-weight: bold; 
+            margin-bottom: 20px; 
+            padding: 10px 20px;
+            border: 5px solid; 
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.7); 
+            min-width: 150px;
+            text-align: center;
+        }
+        
+        button { 
+            font-family: Arial, sans-serif; 
+            padding: 12px 20px; /* Légèrement moins de padding horizontal */
+            font-size: 16px; 
+            cursor: pointer; 
+            border: none; 
+            border-radius: 5px; 
+            color: white; 
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        /* Réduction de la largeur maximale des contrôles manuels */
+        #manual-controls {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: rgba(52, 73, 94, 0.9);
+            border-radius: 8px;
+            width: auto; /* Autorise à être plus étroit */
+            max-width: 300px; /* Largeur maximale réduite */
+            color: #ecf0f1;
+        }
+        
+        #manual-controls p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin: 5px 0; /* Réduire les marges verticales autour des paragraphes */
+        }
+
+        /* Ajustement des contrôles (boutons rapides) */
+        .controls { 
+            gap: 5px; /* Réduit l'espace entre les boutons */
+            margin-bottom: 10px; /* Réduit l'espace vertical */
+        }
+
+        input[type="number"] {
+            font-family: Arial, sans-serif;
+            padding: 8px;
+            font-size: 16px;
+            width: 70px; /* Légèrement moins large */
+            margin: 5px 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .add-btn { background-color: #27ae60; }
+        .remove-btn { background-color: #c0392b; }
+        .set-btn { background-color: #3498db; }
+        .reset-btn { background-color: #f39c12; }
+    </style>
